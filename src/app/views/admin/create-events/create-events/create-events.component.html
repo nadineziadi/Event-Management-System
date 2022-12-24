@@ -1,0 +1,119 @@
+<div class="box">
+  <h2>Create An Event!</h2>
+  <h4>Basic Informations</h4>
+  <p>
+    Name your event and tell potential attendees why they should come. Add info
+    to characterize its uniqueness.
+  </p>
+
+  <input
+    class="form-control"
+    type="text"
+    placeholder="Event name"
+    aria-label="default input example"
+    required
+  />
+  <input
+    class="form-control"
+    type="text"
+    placeholder="organizer"
+    aria-label="default input example"
+    required
+  />
+  <div class="select">
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Type</option>
+      <option value="1">Camp</option>
+      <option value="2">Concert</option>
+      <option value="3">Conference</option>
+      <option value="4">Other</option>
+    </select>
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Category</option>
+      <option value="1">Arts</option>
+      <option value="2">Family</option>
+      <option value="3">Education</option>
+      <option value="4">Other</option>
+    </select>
+  </div>
+
+  <hr />
+  <h4>Location</h4>
+
+  <input
+    class="form-control"
+    type="text"
+    placeholder="insert address"
+    aria-label="default input example"
+    required
+  />
+
+  <hr />
+  <h4>Date and Time</h4>
+  <div class="beginning">
+    <div class="time">
+      <!-- <div class="col-md-6"> -->
+      <input
+        class="form-control"
+        type="text"
+        placeholder="insert time"
+        aria-label="default input example"
+      />
+      <!-- </div> -->
+    </div>
+    <div class="col-md-6">
+      <label for="inputBeginning" class="form-label">Beginning Date</label>
+      <input
+        type="date"
+        name="date"
+        id="date"
+        min="1990-01-01"
+        max="2000-01-01"
+        value="1992-01-01"
+      />
+    </div>
+  </div>
+  <div class="end">
+    <div class="time2">
+      <!-- <div class="col-md-6"> -->
+      <input
+        class="form-control"
+        type="text"
+        placeholder="insert time"
+        aria-label="default input example"
+      />
+      <!-- </div>-->
+    </div>
+
+    <div class="col-md-6">
+      <label for="date">end date</label>
+      <input
+        type="date"
+        name="date"
+        id="date"
+        min="1990-01-01"
+        max="2000-01-01"
+        value="1992-01-01"
+      />
+    </div>
+  </div>
+
+  <hr />
+  <h4>Price</h4>
+  <div class="mb-3">
+    <div class="input-group mb-3">
+      <span class="input-group-text">$</span>
+      <input
+        type="text"
+        class="form-control"
+        aria-label="Amount (to the nearest dollar)"
+      />
+      <span class="input-group-text">.00</span>
+    </div>
+
+    <hr />
+    <h4>Event Picture</h4>
+    <label for="formFile" class="form-label">Select event picture</label>
+    <input class="form-control" type="file" id="formFile" />
+  </div>
+</div>
